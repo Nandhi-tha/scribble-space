@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Scribble Space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class ="navbar">
+    <h1>Scribble Space</h1>
+    </div>
+
+    <div class="container">
+        <div class="blog-container">
+            <h2>Life through words</h2>
+            <h5>Author</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, impedit voluptas dolorem reiciendis quo doloribus, sapiente accusamus consequatur neque atque molestiae? Praesentium labore earum incidunt!</p>
+            <button onclick="deleteblog(event)">Delete</button>
+        </div>
+    </div>
+
+
+    <div class="popupoverlay"></div>
+    <div class ="popup-box">
+        <h2>Add Blog</h2>
+        <form>
+            <input type="text" placeholder="Blog Title" id = "blog-title-input">
+            <input type="text" placeholder="Blog Author" id="blog-author-input">
+            <textarea placeholder="Blog Content" id="blog-content-input"></textarea>
+            <button id="add-blog">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button class = "add-button" id ="add-popup-button">+</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
